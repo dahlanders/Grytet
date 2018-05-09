@@ -9,7 +9,7 @@ namespace Grytet.Test
 {
     public class TestClassTestData
     {
-        public static void Testareas()
+        public static List<City> Testareas()
         {
             var citygothenburg = new City();
             citygothenburg.Name = "Göteborg";
@@ -38,6 +38,11 @@ namespace Grytet.Test
                     Value = 70
                 }
             };
+            List<City> masterlist = new List<City>();
+            masterlist.Add(citygothenburg);
+            masterlist.Add(cityhelsingborg);
+
+            return masterlist;
         }
     }
 }
