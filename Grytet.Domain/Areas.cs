@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Grytet.Domain
 {
-    class Areas
+    public class Areas
     {
         public int Id { get; set; }
+        public int Value { get; set; }
         public string Name { get; set; }
 
     }
